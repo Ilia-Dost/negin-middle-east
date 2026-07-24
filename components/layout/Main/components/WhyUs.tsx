@@ -2,11 +2,10 @@
 
 export default function WhyUs() {
   return (
-    <section className="py-20 px-6 mt-20 md:mt-0 lg:mt-0">
+    <section className="py-20 px-6 mt-48 md:mt-0 lg:mt-0">
 
       <div className="max-w-5xl mx-auto">
 
-        {/* Title */}
         <div className="text-center mb-16">
 
           <h2 className="
@@ -36,11 +35,9 @@ export default function WhyUs() {
 
 
 
-        {/* Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
 
 
-          {/* Card 1 */}
           <div
             className="
               bg-white
@@ -121,7 +118,6 @@ export default function WhyUs() {
 
 
 
-          {/* Card 2 */}
           <div
             className="
               bg-white
@@ -142,7 +138,7 @@ export default function WhyUs() {
                 w-12
                 h-12
                 bg-blue-100
-                text-blue-600
+                text-green-500
                 rounded-xl
                 flex
                 items-center
@@ -200,7 +196,6 @@ export default function WhyUs() {
 
 
 
-        {/* CTA */}
         <div
           className="
             bg-slate-900

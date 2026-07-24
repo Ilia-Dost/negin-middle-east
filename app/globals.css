@@ -12,7 +12,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Vazir';
   src: url('/fonts/Vazir.woff2') format('woff2');
   font-weight: normal;
@@ -34,6 +34,12 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+} */
+@font-face {
+  font-family: "B Nazanin";
+  src: url("/fonts/B_NAZANIN/B-NAZANIN.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .scrollbar-hide {
@@ -63,5 +69,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Vazir', 'Segoe UI', Tahoma, sans-serif;
+  font-family: "B Nazanin", sans-serif;
 }

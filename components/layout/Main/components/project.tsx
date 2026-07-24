@@ -50,7 +50,6 @@ export default function Project() {
 
   return (
     <>
-      {/* موبایل */}
       <div className="block md:hidden relative mt-10">
         <Link href={items[currentIndex].href}>
           <div className="w-[350px] h-56 mx-auto overflow-hidden rounded-3xl shadow-md">
@@ -113,7 +112,6 @@ export default function Project() {
 
 
 
-      {/* تبلت */}
       <div className="hidden md:block lg:hidden relative mt-5">
         <Link href={items[currentIndex].href}>
           <Image
@@ -183,7 +181,6 @@ export default function Project() {
 
 
 
-      {/* دسکتاپ */}
       <div className="hidden lg:block relative mt-5">
 
         <Link href={items[currentIndex].href}>

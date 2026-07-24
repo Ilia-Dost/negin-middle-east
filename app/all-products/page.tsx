@@ -25,7 +25,6 @@ export default function Allproducts() {
         <div key={item.id}>
 
 
-          {/* Mobile */}
           <Link
             href={`/product/${item.id}`}
             className="block lg:hidden"
@@ -64,7 +63,6 @@ export default function Allproducts() {
 
 
 
-          {/* Desktop */}
           <div
             className={`
               hidden
@@ -83,7 +81,6 @@ export default function Allproducts() {
 
 
 
-              {/* Info Right */}
               {index % 2 !== 0 && (
 
                 <div
@@ -155,10 +152,6 @@ export default function Allproducts() {
 
 
 
-
-
-
-              {/* Image */}
               <Link href={`/product/${item.id}`}>
 
                 <div className="
@@ -203,7 +196,6 @@ export default function Allproducts() {
 
 
 
-              {/* Info Left */}
               {index % 2 === 0 && (
 
                 <div

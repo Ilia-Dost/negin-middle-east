@@ -42,7 +42,6 @@ export default async function ProductPage({
     <main className="bg-slate-50">
 
 
-      {/* Hero */}
       <section className="relative w-full h-64 md:h-[450px] lg:h-[700px]">
 
         <Image
@@ -110,7 +109,6 @@ export default async function ProductPage({
       ">
 
 
-        {/* Info Cards */}
         <div className="
           grid
           grid-cols-2
@@ -165,7 +163,6 @@ export default async function ProductPage({
 
 
 
-        {/* Description */}
         <div className="mt-16">
 
           <h2 className="
@@ -196,7 +193,6 @@ export default async function ProductPage({
 
 
 
-        {/* Services */}
         <div className="mt-20">
 
           <h2 className="

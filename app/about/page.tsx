@@ -43,7 +43,6 @@ export default function About() {
     <main className="w-full min-h-screen bg-slate-50">
 
 
-      {/* Hero */}
       <section className="
         relative
         w-full
@@ -109,7 +108,6 @@ export default function About() {
 
 
 
-      {/* About Content */}
       <section className="
         max-w-7xl
         mx-auto
@@ -190,7 +188,6 @@ export default function About() {
 
 
 
-      {/* Features */}
       <section className="
         bg-slate-900
         py-20
@@ -291,7 +288,6 @@ export default function About() {
 
 
 
-      {/* Steps */}
       <section className="
         py-20
         mt-20
@@ -383,7 +379,6 @@ export default function About() {
 
 
 
-      {/* CTA */}
       <section className="
         bg-blue-600
         py-20
