@@ -36,18 +36,17 @@ export default function Navigation() {
 
   return (
     <div className="relative z-50">
-
       <button
         onClick={() => setShow(!show)}
-        className="flex flex-col items-center justify-center w-10 h-10 rounded-md bg-gray-600 hover:bg-gray-500 transition"
+        className="flex flex-col items-center justify-center w-10 h-10 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 transition"
       >
         {show ? (
-          <span className="text-3xl text-white">×</span>
+          <span className="text-3xl text-slate-700">×</span>
         ) : (
           <>
-            <span className="w-7 h-1 bg-white rounded mb-1"></span>
-            <span className="w-7 h-1 bg-white rounded mb-1"></span>
-            <span className="w-7 h-1 bg-white rounded"></span>
+            <span className="w-7 h-1 bg-slate-700 rounded mb-1"></span>
+            <span className="w-7 h-1 bg-slate-700 rounded mb-1"></span>
+            <span className="w-7 h-1 bg-slate-700 rounded"></span>
           </>
         )}
       </button>
@@ -60,38 +59,33 @@ export default function Navigation() {
             right-0
             w-60
             rounded-2xl
-            bg-gray-700
-            shadow-2xl
+            bg-white
+            border
+            border-slate-200
+            shadow-xl
             p-5
-            animate-in
-            fade-in
-            slide-in-from-top-2
-            duration-200
           "
         >
           <ul className="space-y-4">
-
             <li>
               <Link
                 href="/"
                 onClick={closeMenu}
-                className="block text-white hover:text-emerald-400 transition"
+                className="block text-slate-700 hover:text-blue-600 transition"
               >
                 صفحه اصلی
               </Link>
             </li>
 
             <li>
-
               <button
                 onClick={() => {
                   setShowSubmenu(!showSubmenu);
                   setSelectedSub(null);
                 }}
-                className="flex justify-between items-center w-full text-white hover:text-emerald-400 transition"
+                className="flex justify-between items-center w-full text-slate-700 hover:text-blue-600 transition"
               >
                 محصولات
-
                 <span
                   className={`transition ${
                     showSubmenu ? "rotate-180" : ""
@@ -103,27 +97,21 @@ export default function Navigation() {
 
               {showSubmenu && (
                 <ul className="mr-4 mt-3 space-y-2">
-
                   {submenuData.map((item) => (
                     <li key={item.title}>
-
                       <button
                         onClick={() =>
                           setSelectedSub(
-                            selectedSub === item.title
-                              ? null
-                              : item.title
+                            selectedSub === item.title ? null : item.title
                           )
                         }
-                        className="flex justify-between items-center w-full text-gray-200 hover:text-emerald-400 transition"
+                        className="flex justify-between items-center w-full text-slate-600 hover:text-blue-600 transition"
                       >
                         {item.title}
 
                         <span
                           className={`transition ${
-                            selectedSub === item.title
-                              ? "rotate-180"
-                              : ""
+                            selectedSub === item.title ? "rotate-180" : ""
                           }`}
                         >
                           ▼
@@ -131,26 +119,22 @@ export default function Navigation() {
                       </button>
 
                       {selectedSub === item.title && (
-                        <ul className="mr-5 mt-2 space-y-2 border-r border-gray-500 pr-3">
-
+                        <ul className="mr-5 mt-2 space-y-2 border-r border-slate-300 pr-3">
                           {item.projects.map((project) => (
                             <li key={project.title}>
                               <Link
                                 href={project.href}
                                 onClick={closeMenu}
-                                className="block text-sm text-gray-400 hover:text-emerald-400 transition"
+                                className="block text-sm text-slate-500 hover:text-blue-600 transition"
                               >
                                 {project.title}
                               </Link>
                             </li>
                           ))}
-
                         </ul>
                       )}
-
                     </li>
                   ))}
-
                 </ul>
               )}
             </li>
@@ -159,12 +143,11 @@ export default function Navigation() {
               <Link
                 href="/about"
                 onClick={closeMenu}
-                className="block text-white hover:text-emerald-400 transition"
+                className="block text-slate-700 hover:text-blue-600 transition"
               >
                 درباره ما
               </Link>
             </li>
-
           </ul>
         </div>
       )}

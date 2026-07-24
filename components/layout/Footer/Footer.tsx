@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-slate-950 text-slate-100">
       <div className="max-w-7xl mx-auto px-6 py-14">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -14,23 +14,23 @@ export default function Footer() {
               نگین خاورمیانه
             </h3>
 
-            <p className="text-gray-400 leading-8">
-              شرکت ساختمانی نگین خاورمیانه با بیش از ۱۵ سال سابقه در
-              اجرای پروژه‌های مسکونی، تجاری و اداری فعالیت می‌کند.
+            <p className="leading-8 text-slate-400">
+              شرکت ساختمانی نگین خاورمیانه با بیش از ۱۵ سال سابقه در اجرای
+              پروژه‌های مسکونی، تجاری و اداری فعالیت می‌کند.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-5">
+            <h3 className="text-xl font-bold text-white mb-5">
               دسترسی سریع
             </h3>
 
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-3">
 
               <li>
                 <Link
                   href="/"
-                  className="transition hover:text-emerald-500"
+                  className="text-slate-400 transition-colors duration-200 hover:text-blue-500"
                 >
                   صفحه اصلی
                 </Link>
@@ -39,7 +39,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/all-products"
-                  className="transition hover:text-emerald-500"
+                  className="text-slate-400 transition-colors duration-200 hover:text-blue-500"
                 >
                   پروژه‌ها
                 </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="transition hover:text-emerald-500"
+                  className="text-slate-400 transition-colors duration-200 hover:text-blue-500"
                 >
                   درباره ما
                 </Link>
@@ -58,11 +58,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-5">
+            <h3 className="text-xl font-bold text-white mb-5">
               اطلاعات تماس
             </h3>
 
-            <div className="space-y-3 text-gray-400">
+            <div className="space-y-3 text-slate-400">
 
               <p>📍 تهران، خیابان ولیعصر</p>
 
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-5">
+            <h3 className="text-xl font-bold text-white mb-5">
               شبکه‌های اجتماعی
             </h3>
 
@@ -84,8 +84,7 @@ export default function Footer() {
                 href="https://instagram.com/ily4_dr00"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-white/10 hover:bg-orange-500 transition"
-              >
+                className="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-pink-600 hover:text-white transition-all duration-300"              >
                 Instagram
               </a>
 
@@ -93,8 +92,7 @@ export default function Footer() {
                 href="https://t.me/ily4_CFZ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-white/10 hover:bg-sky-500 transition"
-              >
+                className="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-sky-500 hover:text-white transition-all duration-300"              >
                 Telegram
               </a>
 
@@ -102,8 +100,7 @@ export default function Footer() {
                 href="https://rubika.ir/ILY_cfz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-white/10 hover:bg-emerald-600 transition"
-              >
+                className="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-blue-700 hover:text-white transition-all duration-300"              >
                 Rubika
               </a>
 
@@ -112,7 +109,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+        <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500">
           © ۱۴۰۵ تمامی حقوق این وب‌سایت متعلق به شرکت نگین خاورمیانه است.
         </div>
 
